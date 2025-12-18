@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <title>Play2Win Game</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <h2>🎮 Play2Win Game</h2>
+  <p id="userIdText"></p>
+  <p id="entryText"></p>
+
+  <button onclick="startGame()">Play Game</button>
+  <button onclick="showDraw()">Daily Draw</button>
+
+  <div id="gameArea" class="hidden">
+    <h3>Tap Speed Game</h3>
+    <p>Score: <span id="score">0</span></p>
+    <button onclick="tap()">TAP</button>
+    <br><br>
+    <button onclick="finishGame()">Finish Game</button>
+  </div>
+
+  <div id="drawArea" class="hidden">
+    <h3>Today's Prize: ₹500</h3>
+    <p id="drawEntries"></p>
+  </div>
+
+  <p class="legal">
+    Skill-based games only • No guaranteed earnings • Rewards are promotional
+  </p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
